@@ -1,0 +1,14 @@
+#!/bin/bash
+
+python plots_for_paper_big_batch.py transformer_xl,transformer_xl,transformer_xl,transformer_xl ptb,ptb,ptb,ptb --timestamp=1624365143 --batch_size=64,64,64,64 --acc_step=8,16,32,112 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py transformer_xl,transformer_xl,transformer_xl,transformer_xl ptb,ptb,ptb,ptb --timestamp=1624365143 --batch_size=64,64,64,64 --acc_step=8,16,32,112 --plot_type=best_run --metric=train_metric --big_batch
+python plots_for_paper_big_batch.py transformer_encoder,transformer_encoder,transformer_encoder,transformer_encoder wikitext2,wikitext2,wikitext2,wikitext2,wikitext2 --timestamp=1624365143 --batch_size=256,256,256,256 --acc_step=8,16,32,232 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py transformer_encoder,transformer_encoder,transformer_encoder,transformer_encoder wikitext2,wikitext2,wikitext2,wikitext2,wikitext2 --timestamp=1624365143 --batch_size=256,256,256,256 --acc_step=8,16,32,232 --plot_type=best_run --metric=train_metric --big_batch
+python plots_for_paper_big_batch.py lenet5,lenet5,lenet5,lenet5 mnist,mnist,mnist,mnist,mnist,mnist --timestamp=1624365143 --batch_size=4096,8192,16384,60000 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py lenet5,lenet5,lenet5,lenet5 mnist,mnist,mnist,mnist,mnist,mnist --timestamp=1624365143 --batch_size=4096,8192,16384,60000 --plot_type=best_run --metric=train_metric --big_batch
+python plots_for_paper_big_batch.py resnet50,resnet50,resnet50,resnet50 cifar100,cifar100,cifar100,cifar100 --timestamp=1624365143 --batch_size=2048,4096,8192,16384 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py resnet50,resnet50,resnet50,resnet50 cifar100,cifar100,cifar100,cifar100 --timestamp=1624365143 --batch_size=2048,4096,8192,16384 --plot_type=best_run --metric=train_metric --big_batch
+python plots_for_paper_big_batch.py bert_base_pretrained,bert_base_pretrained,bert_base_pretrained,bert_base_pretrained squad,squad,squad,squad --timestamp=1624365143 --batch_size=24,24,24,24 --acc_step=32,64,128,256 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py bert_base_pretrained,bert_base_pretrained,bert_base_pretrained,bert_base_pretrained squad,squad,squad,squad --timestamp=1624365143 --batch_size=24,24,24,24 --acc_step=32,64,128,256 --plot_type=best_run --metric=train_metric --big_batch
+python plots_for_paper_big_batch.py resnet34,resnet34,resnet34,resnet34 cifar10,cifar10,cifar10,cifar10 --timestamp=1628153703 --batch_size=2048,4096,8192,16384 --plot_type=best_run --metric=training_loss --big_batch
+python plots_for_paper_big_batch.py resnet34,resnet34,resnet34,resnet34 cifar10,cifar10,cifar10,cifar10 --timestamp=1628153703 --batch_size=2048,4096,8192,16384 --plot_type=best_run --metric=train_metric --big_batch
