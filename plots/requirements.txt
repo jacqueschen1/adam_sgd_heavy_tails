@@ -1,5 +1,0 @@
-wandb
-pandas>=1.0.3
-numpy
-tqdm
-matplotlib>=3.2.1

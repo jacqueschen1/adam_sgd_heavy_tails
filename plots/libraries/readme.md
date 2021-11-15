@@ -1,1 +1,0 @@
-To install the libraries, `cd` into their directory and `pip install .`
